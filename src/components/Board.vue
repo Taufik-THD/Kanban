@@ -36,7 +36,9 @@
               <p class="flow-text">Back Log</p>
               <div class="card blue-grey" v-for='activity of activities' v-bind:key="activity['./key']" v-if="activity.status == 'backlog'">
                 <div class="card-content">
-                  <p>{{activity.title}}</p>
+                  <h3>{{activity.title}}</h3>
+                  <hr>
+                  <h5>{{activity.description}}</h5>
                 </div>
                 <div class="card-action">
                   <a class="waves-effect waves-light btn-small" style="font-size:10; padding: 0 13px 0 13px;" @click='deleteData(activity[".key"])'>Delete</a>
@@ -48,7 +50,9 @@
               <p class="flow-text">To-Do</p>
               <div class="card blue-grey lighten-1" v-for='activity of activities' v-bind:key="activity['./key']" v-if="activity.status == 'todo'">
                 <div class="card-content">
-                  <p>{{activity.title}}</p>
+                  <h3>{{activity.title}}</h3>
+                  <hr>
+                  <h5>{{activity.description}}</h5>
                 </div>
                 <div class="card-action">
                   <a class="waves-effect waves-light btn-small" style="font-size:10; padding: 0 10px 0 10px;" @click='downStatus(activity[".key"], activity.status)'> < </a>
@@ -61,7 +65,9 @@
               <p class="flow-text">On-Going</p>
               <div class="card blue-grey lighten-2" v-for='activity of activities' v-bind:key="activity['./key']" v-if="activity.status == 'ongoing'">
                 <div class="card-content">
-                  <p>{{activity.title}}</p>
+                  <h3>{{activity.title}}</h3>
+                  <hr>
+                  <h5>{{activity.description}}</h5>
                 </div>
                 <div class="card-action">
                   <a class="waves-effect waves-light btn-small" style="font-size:10; padding: 0 10px 0 10px;" @click='downStatus(activity[".key"], activity.status)'><</a>
@@ -74,7 +80,9 @@
               <p class="flow-text">Done</p>
               <div class="card blue-grey lighten-3" v-for='activity of activities' v-bind:key="activity['./key']" v-if="activity.status == 'done'">
                 <div class="card-content">
-                  <p>{{activity.title}}</p>
+                  <h3>{{activity.title}}</h3>
+                  <hr>
+                  <h5>{{activity.description}}</h5>
                 </div>
                 <div class="card-action">
                   <a class="waves-effect waves-light btn-small" style="font-size:10; padding: 0 10px 0 10px;" @click='downStatus(activity[".key"], activity.status)'><</a>
