@@ -8,7 +8,7 @@
               <h1 id="logo-container" class="brand-logo">
                 <span style="color:darkgrey;">Kanban</span>
                 <span style="color:dodgerblue;">Board</span>
-              </h1>
+              </h1> 
             </div>
           </div>
         </div>
